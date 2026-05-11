@@ -94,7 +94,7 @@ class generate_defect_summary_report:
     def search_ftp_files(self):
         search_string = self.search_entry.get()
         try:
-            ftp = FTP("10.88.112.25")
+            ftp = FTP("Input IP")
             ftp.login("uledeqpftp", "uledeqpftp")
             ftp.cwd(self.FTP_Path)
             filenames = ftp.nlst()
